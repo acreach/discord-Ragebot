@@ -5,7 +5,7 @@ var AuthDetails = require("./auth.json");
 
 var bot = new Discord.Client();
 var colors = ["DARK", "RED", "BLUE", "GOLDEN", "GREEN", "ORANGE", "WHITE", "PINK", "BROWN", "BLACK"];
-var adjs = ["ELECTRICAL", "RADIOACTIVE", "SPACE", "LAZER SHOOTING", "FLYING", "DEAD", "FLOWER", "PLASTIC", "SHINING"];
+var adjs = ["ELECTRICAL", "RADIOACTIVE", "SPACE", "LAZER SHOOTING", "FLYING", "DEAD", "PLASTIC", "SHINING"];
 var nationality = ["MEXICAN", "AMERICAN", "FRENCH", "SPANISH", "ITALIAN", "RUSSIAN", "PORTUGUESE", "BRASILIAN", "PINOY"];
 var nouns = ["PONEY", "SNAKE", "GOAT", "COW", "DEMON", "MAN", "GIRL", "BOY", "ROBOT", "HORSE", "PIG", "BIRD"];
 

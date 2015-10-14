@@ -1,7 +1,10 @@
 # Logs
 logs
 *.log
+<<<<<<< HEAD
 npm-debug.log*
+=======
+>>>>>>> 33d32ac43d2b8a8bea258e5fe50f9fc529b05e29
 
 # Runtime data
 pids
@@ -23,8 +26,7 @@ coverage
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
-# Dependency directory
-# https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
 node_modules
 
+# Custom
 auth.json

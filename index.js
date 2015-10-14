@@ -4,9 +4,10 @@ var Discord = require("discord.js");
 var AuthDetails = require("./auth.json");
 
 var bot = new Discord.Client();
-var adjs = ["ELECTRICAL", "RADIOACTIVE", "SPACE", "LAZER SHOOTING"];
-var colors = ["RED", "BLUE", "GOLDEN", "GREEN"];
-var nouns = ["PONEY", "SNAKE", "GOAT", "COW"];
+var colors = ["DARK", "RED", "BLUE", "GOLDEN", "GREEN", "ORANGE", "WHITE", "PINK", "BROWN", "BLACK"];
+var adjs = ["ELECTRICAL", "RADIOACTIVE", "SPACE", "LAZER SHOOTING", "FLYING", "DEAD", "FLOWER", "PLASTIC", "SHINING"];
+var nationality = ["MEXICAN", "AMERICAN", "FRENCH", "SPANISH", "ITALIAN", "RUSSIAN", "PORTUGUESE", "BRASILIAN", "PINOY"];
+var nouns = ["PONEY", "SNAKE", "GOAT", "COW", "DEMON", "MAN", "GIRL", "BOY", "ROBOT", "HORSE", "PIG", "BIRD"];
 
 bot.on("ready", function () {
 	bot.setPlayingGame(234);
@@ -25,10 +26,10 @@ bot.on("message", function (msg) {
 	} else if (msg_args[0] === "bot" && msg_args[1] === undefined) {
 		bot.sendMessage(msg.channel, "Commandes disponibles : \n - /osfrog \n - /roll [nbDice] [rollMax]");
 	} else if (msg_args[0].toLowerCase() === "/osfrog") {
-		bot.sendMessage(msg.channel, "LE BALANCED " + randElem(adjs) + " " + randElem(colors) + " " + randElem(nouns));
+		bot.sendMessage(msg.channel, "LE BALANCED " + randElem(colors) + " " + randElem(adjs) + " " + randElem(nationality) + " " + randElem(nouns));
 	} else if (msg_args[0].toLowerCase() === "/roll") {
 		if (parseInt(msg_args[1],10) && parseInt(msg_args[2],10) && msg_args[3] === undefined) {
-			bot.sendMessage(msg.channel, "Your roll : " + rollTheDice(parseInt(msg_args[1], 10), parseInt(msg_args[2], 10)));
+			bot.sendMessage(msg.channel, rollTheDice(parseInt(msg_args[1], 10), parseInt(msg_args[2], 10)));
 		} else {
 			bot.sendMessage(msg.channel, "Syntaxe incorrecte : /roll [nbDice] [rollMax]");
 		}

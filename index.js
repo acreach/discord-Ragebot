@@ -38,7 +38,6 @@ bot.on("message", function (msg) {
 var randElem = function(tab) {
 	var max = tab.length - 1;
 	var rand = Math.floor(Math.random()*max);
-	console.log(max, rand);
 	return tab[rand];
 }
 

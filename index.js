@@ -4,10 +4,10 @@ var Discord = require("discord.js");
 var AuthDetails = require("./auth.json");
 
 var bot = new Discord.Client();
-var colors = ["DARK", "RED", "BLUE", "GOLDEN", "GREEN", "ORANGE", "WHITE", "PINK", "BROWN", "BLACK"];
-var adjs = ["ELECTRICAL", "RADIOACTIVE", "SPACE", "LAZER SHOOTING", "FLYING", "DEAD", "PLASTIC", "SHINING"];
-var nationality = ["MEXICAN", "AMERICAN", "FRENCH", "SPANISH", "ITALIAN", "RUSSIAN", "PORTUGUESE", "BRASILIAN", "PINOY", "NAZI", "CHINESE"];
-var nouns = ["PONEY", "SNAKE", "GOAT", "COW", "DEMON", "MAN", "GIRL", "BOY", "ROBOT", "HORSE", "PIG", "BIRD", "PIZZAIOLO", "MERLINI", "SPIDER"];
+var colors = ["DARK", "RED", "BLUE", "GOLDEN", "GREEN", "ORANGE", "WHITE", "PINK", "BROWN", "BLACK", "ENORMOUS", "ITNY"];
+var adjs = ["ELECTRICAL", "RADIOACTIVE", "SPACE", "LAZER SHOOTING", "FLYING", "DEAD", "PLASTIC", "SHINING", "MUTANT", "CYBER", "ICED", "BLAZING", "VENOMOUS"];
+var nationality = ["MEXICAN", "AMERICAN", "FRENCH", "SPANISH", "ITALIAN", "RUSSIAN", "PORTUGUESE", "BRASILIAN", "PINOY", "NAZI", "CHINESE", "JAPANESE", "COMMUNIST", "CAPITALIST"];
+var nouns = ["PONEY", "SNAKE", "GOAT", "COW", "DEMON", "MAN", "GIRL", "FROG", "ROBOT", "HORSE", "PIG", "BIRD", "PIZZAIOLO", "MERLINI", "SPIDER", "DINOSAUR", "HOBBIT", "DWARF", "BITCH", "ALIEN"];
 
 bot.on("ready", function () {
 	bot.setPlayingGame(234);
